@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<service_port_type_profile>
+	<service_port_type>
+		<type_name>RobotArmControllerService</type_name>
+		<method name="Manipulate" return_type="void" call_type="nonblocking">
+			<param index="1">
+				<name>index</name>
+				<type>unsigned char</type>
+			</param>
+			<param index="2">
+				<name>position</name>
+				<type>std::vector&lt;ObjectPosition&gt;</type>
+			</param>
+		</method>
+		<method name="Grab" return_type="void" call_type="nonblocking">
+			<param index="1">
+				<name>index</name>
+				<type>unsigned char</type>
+			</param>
+			<param index="2">
+				<name>isEnable</name>
+				<type>bool</type>
+			</param>
+		</method>
+		<method name="GetManipulateState" return_type="int" call_type="blocking">
+			<param index="1">
+				<name>index</name>
+				<type>unsigned char</type>
+			</param>
+		</method>
+		<method name="GetGripperState" return_type="int" call_type="blocking">
+			<param index="1">
+				<name>index</name>
+				<type>unsigned char</type>
+			</param>
+		</method>
+	</service_port_type>
+</service_port_type_profile>
+

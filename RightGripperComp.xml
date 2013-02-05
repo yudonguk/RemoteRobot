@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<component_profile>
+  <id>0b05d555-0417-488c-a628-42537eeaa2fc</id>
+  <name>RightGripperComp</name>
+  <version>0.1</version>
+  <copyright>
+    <company>
+      <name>KITECH</name>
+      <phone />
+      <address />
+      <homepage />
+    </company>
+    <license_policy>OPRoS</license_policy>
+  </copyright>
+  <execution_environment>
+    <library_type>dll</library_type>
+    <library_name>GripperComp.dll</library_name>
+    <impl_language>MSVC C++</impl_language>
+    <compiler>MSVC</compiler>
+    <app_domain />
+    <app_robot />
+  </execution_environment>
+  <execution_semantics>
+    <type>passive</type>
+    <period />
+    <priority>5</priority>
+    <instance_creation>multiple</instance_creation>
+    <lifecycle_type>start</lifecycle_type>
+  </execution_semantics>
+  <properties>
+    <!--<property name="ApiName" type="string">OpenGL_Manipulator</property>-->
+    <property name="ApiName" type="string">DynamixelGripper</property>
+
+    <!--직렬통신 설정-->
+    <property name="UARTAPIName" type="string">SerialCommunication</property>
+    <property name="PortName" type="string">COM5</property>
+    <property name="TimeOut" type="int">10</property>
+    <property name="BaudRate" type="int">1000000</property>
+    <property name="DataBits" type="int">8</property>
+    <property name="StopBits" type="int">0</property>
+    <property name="Parity" type="int">0</property>
+    <property name="FlowControl" type="int">0</property>
+
+    <!--조인트 설정-->
+    <property name="Size" type="int">8</property>
+
+    <!--Dummy-->
+    <property name="DynamixelID0" type="double">0</property>
+    <property name="ComplianceMargine0" type="double">0</property>
+    <property name="ComplianceSlope0" type="double">0</property>
+    <property name="PositionResolution0" type="double">0</property>
+    <property name="PositionOffset0" type="double">0</property>
+    <property name="MaximumPower0" type="double">100</property>
+    <property name="MaximumVelocity0" type="double">90</property>
+    <property name="Acceleration0" type="double">100.0</property>
+    <property name="MinimumPositionLimit0" type="double">0</property>
+    <property name="MaximumPositionLimit0" type="double">0</property>
+
+    <!--Dummy-->
+    <property name="DynamixelID1" type="double">0</property>
+    <property name="ComplianceMargine1" type="double">0</property>
+    <property name="ComplianceSlope1" type="double">0</property>
+    <property name="PositionResolution1" type="double">0</property>
+    <property name="PositionOffset1" type="double">0</property>
+    <property name="MaximumPower1" type="double">100</property>
+    <property name="MaximumVelocity1" type="double">90</property>
+    <property name="Acceleration1" type="double">100.0</property>
+    <property name="MinimumPositionLimit1" type="double">0</property>
+    <property name="MaximumPositionLimit1" type="double">0</property>
+    
+    <property name="DynamixelID2" type="double">200</property>
+    <property name="ComplianceMargine2" type="double">1</property>
+    <property name="ComplianceSlope2" type="double">64</property>
+    <property name="PositionResolution2" type="double">0.06127472527472527472527472527473</property>
+    <property name="PositionOffset2" type="double">125.46</property>
+    <property name="MaximumPower2" type="double">100</property>
+    <property name="MaximumVelocity2" type="double">100</property>
+    <property name="Acceleration2" type="double">100.0</property>
+    <property name="MinimumPositionLimit2" type="double">-110.0</property>
+    <property name="MaximumPositionLimit2" type="double">110.0</property>
+
+    <property name="DynamixelID3" type="double">201</property>
+    <property name="ComplianceMargine3" type="double">1</property>
+    <property name="ComplianceSlope3" type="double">64</property>
+    <property name="PositionResolution3" type="double">0.06127472527472527472527472527473</property>
+    <property name="PositionOffset3" type="double">125.46</property>
+    <property name="MaximumPower3" type="double">100</property>
+    <property name="MaximumVelocity3" type="double">45</property>
+    <property name="Acceleration3" type="double">100.0</property>
+    <property name="MinimumPositionLimit3" type="double">-90.0</property>
+    <property name="MaximumPositionLimit3" type="double">90.0</property>
+
+    <property name="DynamixelID4" type="double">203</property>
+    <property name="ComplianceMargine4" type="double">1</property>
+    <property name="ComplianceSlope4" type="double">64</property>
+    <property name="PositionResolution4" type="double">0.29296875</property>
+    <property name="PositionOffset4" type="double">150</property>
+    <property name="MaximumPower4" type="double">100</property>
+    <property name="MaximumVelocity4" type="double">45</property>
+    <property name="Acceleration4" type="double">100.0</property>
+    <property name="MinimumPositionLimit4" type="double">-90.0</property>
+    <property name="MaximumPositionLimit4" type="double">90.0</property>
+
+    <property name="DynamixelID5" type="double">204</property>
+    <property name="ComplianceMargine5" type="double">1</property>
+    <property name="ComplianceSlope5" type="double">64</property>
+    <property name="PositionResolution5" type="double">0.29296875</property>
+    <property name="PositionOffset5" type="double">150</property>
+    <property name="MaximumPower5" type="double">100</property>
+    <property name="MaximumVelocity5" type="double">45</property>
+    <property name="Acceleration5" type="double">100.0</property>
+    <property name="MinimumPositionLimit5" type="double">-140.0</property>
+    <property name="MaximumPositionLimit5" type="double">140.0</property>
+
+    <property name="DynamixelID6" type="double">205</property>
+    <property name="ComplianceMargine6" type="double">1</property>
+    <property name="ComplianceSlope6" type="double">64</property>
+    <property name="PositionResolution6" type="double">0.29296875</property>
+    <property name="PositionOffset6" type="double">150</property>
+    <property name="MaximumPower6" type="double">100</property>
+    <property name="MaximumVelocity6" type="double">45</property>
+    <property name="Acceleration6" type="double">100.0</property>
+    <property name="MinimumPositionLimit6" type="double">-90.0</property>
+    <property name="MaximumPositionLimit6" type="double">90.0</property>
+
+    <property name="DynamixelID7" type="double">206</property>
+    <property name="ComplianceMargine7" type="double">1</property>
+    <property name="ComplianceSlope7" type="double">64</property>
+    <property name="PositionResolution7" type="double">0.29296875</property>
+    <property name="PositionOffset7" type="double">150</property>
+    <property name="MaximumPower7" type="double">100</property>
+    <property name="MaximumVelocity7" type="double">45</property>
+    <property name="Acceleration7" type="double">100.0</property>
+    <property name="MinimumPositionLimit7" type="double">-90.0</property>
+    <property name="MaximumPositionLimit7" type="double">90.0</property>
+
+    <property name="GripperDynamixelID" type="double">207</property>
+    <property name="GripperComplianceMargine" type="double">1</property>
+    <property name="GripperComplianceSlope" type="double">128</property>
+    <property name="GripperPositionResolution" type="double">0.29296875</property>
+    <property name="GripperPositionOffset" type="double">150</property>
+    <property name="GripperMaximumPower" type="double">100</property>
+    <property name="GripperMaximumVelocity" type="double">90</property>
+    <property name="GripperMinimumPositionLimit" type="double">-45</property>
+    <property name="GripperMaximumPositionLimit" type="double">-10</property>
+    <property name="GripperMaximumLoad" type="double">30</property>
+
+
+    <!--OpenGL Manipulator용 외형 설정-->
+    <property name="JointCount" type="int">8</property>
+
+    <!--Dummy-->
+    <property name="JointType0" type="int">0</property>
+    <property name="JointAxis0" type="int">0</property>
+    <property name="X0" type="double">-0.065</property>
+    <property name="Y0" type="double">0.0</property>
+    <property name="Z0" type="double">0.36</property>
+    <property name="Phi0" type="double">1.5707963267948966192313216916398</property>
+    <property name="Theta0" type="double">0.0</property>
+    <property name="Psi0" type="double">0.0</property>
+
+    <!--Dummy-->
+    <property name="JointType1" type="int">0</property>
+    <property name="JointAxis1" type="int">0</property>
+    <property name="X1" type="double">0.0</property>
+    <property name="Y1" type="double">0.0</property>
+    <property name="Z1" type="double">0.137</property>
+    <property name="Phi1" type="double">0.0</property>
+    <property name="Theta1" type="double">0.0</property>
+    <property name="Psi1" type="double">3.1416</property>
+
+    <property name="JointType2" type="int">1</property>
+    <property name="JointAxis2" type="int">2</property>
+    <property name="X2" type="double">-0.025</property>
+    <property name="Y2" type="double">0.0</property>
+    <property name="Z2" type="double">0.037</property>
+    <property name="Phi2" type="double">0.0</property>
+    <property name="Theta2" type="double">0.0</property>
+    <property name="Psi2" type="double">0.0</property>
+
+    <property name="JointType3" type="int">1</property>
+    <property name="JointAxis3" type="int">0</property>
+    <property name="X3" type="double">0.0</property>
+    <property name="Y3" type="double">0.0</property>
+    <property name="Z3" type="double">0.155</property>
+    <property name="Phi3" type="double">0.0</property>
+    <property name="Theta3" type="double">0.0</property>
+    <property name="Psi3" type="double">0.0</property>
+
+    <property name="JointType4" type="int">1</property>
+    <property name="JointAxis4" type="int">0</property>
+    <property name="X4" type="double">0.0</property>
+    <property name="Y4" type="double">0.0</property>
+    <property name="Z4" type="double">0.117</property>
+    <property name="Phi4" type="double">0.0</property>
+    <property name="Theta4" type="double">0.0</property>
+    <property name="Psi4" type="double">0.0</property>
+
+    <property name="JointType5" type="int">1</property>
+    <property name="JointAxis5" type="int">2</property>
+    <property name="X5" type="double">0.0</property>
+    <property name="Y5" type="double">0.0</property>
+    <property name="Z5" type="double">0.077</property>
+    <property name="Phi5" type="double">0.0</property>
+    <property name="Theta5" type="double">0.0</property>
+    <property name="Psi5" type="double">-2.7924341496011340846152618463023</property>
+
+    <property name="JointType6" type="int">1</property>
+    <property name="JointAxis6" type="int">0</property>
+    <property name="X6" type="double">0.0</property>
+    <property name="Y6" type="double">0.0</property>
+    <property name="Z6" type="double">0.06</property>
+    <property name="Phi6" type="double">0.0</property>
+    <property name="Theta6" type="double">0.0</property>
+    <property name="Psi6" type="double">3.1415</property>
+
+    <property name="JointType7" type="int">1</property>
+    <property name="JointAxis7" type="int">1</property>
+    <property name="X7" type="double">0.0</property>
+    <property name="Y7" type="double">0.0</property>
+    <property name="Z7" type="double">0.11</property>
+    <property name="Phi7" type="double">0.0</property>
+    <property name="Theta7" type="double">0.0</property>
+    <property name="Psi7" type="double">0.0</property>
+
+  </properties>
+  <data_type_list />
+  <ports>
+    <service_port>
+      <name>GripperService</name>
+      <description />
+      <type>GripperService</type>
+      <usage>provided</usage>
+      <reference>GripperService.xml</reference>
+    </service_port>
+  </ports>
+</component_profile>
+

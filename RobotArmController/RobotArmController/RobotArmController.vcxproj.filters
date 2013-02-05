@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="RobotArmController.cpp" />
+    <ClCompile Include="RobotArmController.h" />
+    <ClCompile Include="Markup.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_main.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Test">
+      <UniqueIdentifier>{fd1c2f08-50d5-4f16-aa5f-4aab7f2b126f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DynamicLibraryLoader.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="Markup.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="PhantomOmniDataType.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="WorkerThread.h" />
+    <ClInclude Include="JoystickServiceRequired.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="WheelControllerServiceRequired.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="KitechMonotoneCubicTrajectoryGenerationComp.xml">
+      <Filter>Test</Filter>
+    </None>
+    <None Include="LeftGripperComp.xml">
+      <Filter>Test</Filter>
+    </None>
+    <None Include="LeftInverseKinematicsComp.xml">
+      <Filter>Test</Filter>
+    </None>
+    <None Include="PhantomOmniComp.xml">
+      <Filter>Test</Filter>
+    </None>
+    <None Include="RightGripperComp.xml">
+      <Filter>Test</Filter>
+    </None>
+    <None Include="RightInverseKinematicsComp.xml">
+      <Filter>Test</Filter>
+    </None>
+    <None Include="JoystickComp.xml">
+      <Filter>Test</Filter>
+    </None>
+    <None Include="WheelControllerComp.xml">
+      <Filter>Test</Filter>
+    </None>
+  </ItemGroup>
+</Project>

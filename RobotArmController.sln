@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RobotArmController", "RobotArmController\RobotArmController\RobotArmController.vcxproj", "{19B7D777-9AA2-0FFE-1E66-EF84D828BD05}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Center", "Center\Center\Center.vcxproj", "{C4C2803F-200F-D519-D7A9-DE3280639AA6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MicroSoft_Joystick", "MicroSoft_Joystick\MicroSoft_Joystick.vcxproj", "{B755F236-1100-446A-88B9-F5F11BEC0532}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JoystickComp", "JoystickComp\JoystickComp.vcxproj", "{9CA6EE41-70C5-2D78-20F9-D9BB6FBF62E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Test|Win32 = Test|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19B7D777-9AA2-0FFE-1E66-EF84D828BD05}.Debug|Win32.ActiveCfg = Debug|Win32
+		{19B7D777-9AA2-0FFE-1E66-EF84D828BD05}.Debug|Win32.Build.0 = Debug|Win32
+		{19B7D777-9AA2-0FFE-1E66-EF84D828BD05}.Release|Win32.ActiveCfg = Release|Win32
+		{19B7D777-9AA2-0FFE-1E66-EF84D828BD05}.Release|Win32.Build.0 = Release|Win32
+		{19B7D777-9AA2-0FFE-1E66-EF84D828BD05}.Test|Win32.ActiveCfg = Test|Win32
+		{19B7D777-9AA2-0FFE-1E66-EF84D828BD05}.Test|Win32.Build.0 = Test|Win32
+		{C4C2803F-200F-D519-D7A9-DE3280639AA6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C4C2803F-200F-D519-D7A9-DE3280639AA6}.Debug|Win32.Build.0 = Debug|Win32
+		{C4C2803F-200F-D519-D7A9-DE3280639AA6}.Release|Win32.ActiveCfg = Release|Win32
+		{C4C2803F-200F-D519-D7A9-DE3280639AA6}.Release|Win32.Build.0 = Release|Win32
+		{C4C2803F-200F-D519-D7A9-DE3280639AA6}.Test|Win32.ActiveCfg = Test|Win32
+		{C4C2803F-200F-D519-D7A9-DE3280639AA6}.Test|Win32.Build.0 = Test|Win32
+		{B755F236-1100-446A-88B9-F5F11BEC0532}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B755F236-1100-446A-88B9-F5F11BEC0532}.Debug|Win32.Build.0 = Debug|Win32
+		{B755F236-1100-446A-88B9-F5F11BEC0532}.Release|Win32.ActiveCfg = Release|Win32
+		{B755F236-1100-446A-88B9-F5F11BEC0532}.Release|Win32.Build.0 = Release|Win32
+		{B755F236-1100-446A-88B9-F5F11BEC0532}.Test|Win32.ActiveCfg = Release|Win32
+		{B755F236-1100-446A-88B9-F5F11BEC0532}.Test|Win32.Build.0 = Release|Win32
+		{9CA6EE41-70C5-2D78-20F9-D9BB6FBF62E1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9CA6EE41-70C5-2D78-20F9-D9BB6FBF62E1}.Debug|Win32.Build.0 = Debug|Win32
+		{9CA6EE41-70C5-2D78-20F9-D9BB6FBF62E1}.Release|Win32.ActiveCfg = Release|Win32
+		{9CA6EE41-70C5-2D78-20F9-D9BB6FBF62E1}.Release|Win32.Build.0 = Release|Win32
+		{9CA6EE41-70C5-2D78-20F9-D9BB6FBF62E1}.Test|Win32.ActiveCfg = Release|Win32
+		{9CA6EE41-70C5-2D78-20F9-D9BB6FBF62E1}.Test|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

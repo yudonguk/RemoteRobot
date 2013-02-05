@@ -1,0 +1,71 @@
+
+OPROS_INC=C:/Program Files/OPRoS/OprosDevelopment/IDE/CommonLibrary/include
+OPROS_LIB=C:/Program Files/OPRoS/OprosDevelopment/IDE/CommonLibrary/lib
+
+PROJECT1=RobotArmController
+OUTDIR1=.\$(PROJECT1)\Release
+INTDIR1=.\$(PROJECT1)\Release
+OutDir1=.\$(PROJECT1)\Release
+TARGET1=$(PROJECT1).dll
+OBJ1=$(PROJECT1).obj
+
+PROJECT2=Center
+OUTDIR2=.\$(PROJECT2)\Release
+INTDIR2=.\$(PROJECT2)\Release
+OutDir2=.\$(PROJECT2)\Release
+TARGET2=$(PROJECT2).dll
+OBJ2=$(PROJECT2).obj
+
+ALL:	$(OUTDIR1)\$(TARGET1)	$(OUTDIR2)\$(TARGET2)
+
+CLEAN:
+	-@erase "$(OUTDIR1)\$(TARGET1)"
+	-@erase "$(OUTDIR1)\$(OBJ1)"
+	-@erase "$(OUTDIR1)\$(PROJECT1).lib"
+	-@erase "$(OUTDIR2)\$(TARGET2)"
+	-@erase "$(OUTDIR2)\$(OBJ2)"
+	-@erase "$(OUTDIR2)\$(PROJECT2).lib"
+
+$(OUTDIR1) :
+	if not exist "$(OUTDIR1)/$(NULL)" mkdir "$(OUTDIR1)"
+
+$(OUTDIR2) :
+	if not exist "$(OUTDIR2)/$(NULL)" mkdir "$(OUTDIR2)"
+
+INC = /I "$(OPROS_INC)" -IC:/Program Files/OPRoS/OprosDevelopment/IDE/CommonLibrary/include/device
+
+CPP=cl.exe
+
+CPP_PROJ1=/O2 /Oi $(INC) /GL /D "WIN32" /D "_WINDOWS" /D "NRELEASE" /D "MAKE_COMPONENT_DLL" /D "_USRDLL" /D "_WINDLL" /D "_AFXDLL" /D "_UNICODE" \
+/D "UNICODE" /FD /EHsc /MD /Gy /Fo"$(INTDIR1)\\" /Fd"$(INTDIR1)\\" /W0 /nologo /c /Zi /TP /errorReport:prompt
+
+{$(PROJECT1)}.cpp{$(INTDIR1)}.obj::
+	$(CPP) $(CPP_PROJ1) $<
+
+CPP_PROJ2=/O2 /Oi $(INC) /GL /D "WIN32" /D "_WINDOWS" /D "NRELEASE" /D "MAKE_COMPONENT_DLL" /D "_USRDLL" /D "_WINDLL" /D "_AFXDLL" /D "_UNICODE" \
+/D "UNICODE" /FD /EHsc /MD /Gy /Fo"$(INTDIR2)\\" /Fd"$(INTDIR2)\\" /W0 /nologo /c /Zi /TP /errorReport:prompt
+
+{$(PROJECT2)}.cpp{$(INTDIR2)}.obj::
+	$(CPP) $(CPP_PROJ2) $<
+
+LINK32=link.exe
+LINK32_FLAGS1=/OUT:"$(OUTDIR1)\$(TARGET1)" /INCREMENTAL:NO /NOLOGO /libpath:"$(OPROS_LIB)" \
+/DLL /MANIFEST /RELEASE /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /DYNAMICBASE /NXCOMPAT /MACHINE:X86 /ERRORREPORT:PROMPT OPRoSCDL.lib
+
+
+LINK32_FLAGS2=/OUT:"$(OUTDIR2)\$(TARGET2)" /INCREMENTAL:NO /NOLOGO /libpath:"$(OPROS_LIB)" \
+/DLL /MANIFEST /RELEASE /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /DYNAMICBASE /NXCOMPAT /MACHINE:X86 /ERRORREPORT:PROMPT OPRoSCDL.lib
+
+
+LINK32_OBJS1= \
+	"$(INTDIR1)/$(OBJ1)"
+
+
+LINK32_OBJS2= \
+	"$(INTDIR2)/$(OBJ2)"
+
+
+$(OUTDIR1)/$(TARGET1) : $(OUTDIR1) $(DEF_FILE) $(LINK32_OBJS1)
+	$(LINK32) $(LINK32_FLAGS1) $(LINK32_OBJS1)
+$(OUTDIR2)/$(TARGET2) : $(OUTDIR2) $(DEF_FILE) $(LINK32_OBJS2)
+	$(LINK32) $(LINK32_FLAGS2) $(LINK32_OBJS2)

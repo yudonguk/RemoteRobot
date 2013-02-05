@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<OPRoSProject>
+	<name>RobotArmController</name>
+	<src>D:/OPRoS/workspace/RobotArmController/Center</src>
+	<bin>D:/OPRoS/workspace/RobotArmController/Center</bin>
+	<language>MSVC C++</language>
+	<location>D:/OPRoS/workspace</location>
+	<components>
+		<component>RobotArmController</component>
+		<component>Center</component>
+	</components>
+</OPRoSProject>
+

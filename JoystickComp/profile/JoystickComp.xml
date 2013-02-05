@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<component_profile>
+	<id>11bb3e84-5dcf-4748-a1b8-64715d1e8a14</id>
+	<name>JoystickComp</name>
+	<version>1.0</version>
+	<layout>73,28,357,322</layout>
+	<collapsed>0</collapsed>
+	<copyright>
+		<company>
+			<name>KITECH</name>
+			<phone />
+			<address />
+			<homepage />
+		</company>
+		<license_policy>LGPL</license_policy>
+	</copyright>
+	<execution_environment>
+		<library_type>dll</library_type>
+		<library_name>JoystickComp.dll</library_name>
+		<impl_language>MSVC C++</impl_language>
+		<compiler>MSVC</compiler>
+		<app_domain />
+		<app_robot />
+	</execution_environment>
+	<execution_semantics>
+		<type>periodic</type>
+		<period>100</period>
+		<priority>5</priority>
+		<instance_creation>multiple</instance_creation>
+		<lifecycle_type>start</lifecycle_type>
+	</execution_semantics>
+	<properties />
+	<data_type_list />
+	<defined_data_types />
+	<defined_service_types>
+		<defined_service_type>JoystickService.xml</defined_service_type>
+	</defined_service_types>
+	<ports>
+		<service_port>
+			<name>JoystickService</name>
+			<description />
+			<type>JoystickService</type>
+			<usage>provided</usage>
+			<reference>JoystickService.xml</reference>
+			<layout>414,135,127,32</layout>
+		</service_port>
+		<data_port>
+			<name>joystickData</name>
+			<description />
+			<data_type>JoystickData</data_type>
+			<usage>output</usage>
+			<reference />
+			<layout>414,257,106,32</layout>
+		</data_port>
+	</ports>
+</component_profile>
+

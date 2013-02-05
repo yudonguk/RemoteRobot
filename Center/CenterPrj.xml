@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<OPRoSProject>
+	<name>Center</name>
+	<src>D:/OPRoS/workspace/Center/Center</src>
+	<bin>D:/OPRoS/workspace/Center/Center</bin>
+	<language>MSVC C++</language>
+	<location>D:/OPRoS/workspace</location>
+	<components>
+		<component>Center</component>
+	</components>
+</OPRoSProject>
+
